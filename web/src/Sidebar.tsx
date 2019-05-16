@@ -139,7 +139,9 @@ class Sidebar extends PureComponent<SidebarProps> {
             </span>
             <span className="resLink-name">{item.name}</span>
             {item.numberOfAlerts() > 0 ? (
-              <span className="resLink-alertNum">{item.numberOfAlerts()}</span>
+              <span className="resLink-alertBadge">
+                {item.numberOfAlerts()}
+              </span>
             ) : (
               ""
             )}
